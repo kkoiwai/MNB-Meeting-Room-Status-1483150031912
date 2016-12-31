@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: MNB Meeting Room Status
+  host: mnb-meetingrooms
+  disk_quota: 1024M
+  services:
+  - MNB Meeting Room Status-cloudantNoSQLDB
+  - MNB Meeting Room Status-iotf-service
+  env:
+    NODE_RED_PASSWORD: itbukai
+    NODE_RED_USERNAME: admin
